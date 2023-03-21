@@ -1,0 +1,132 @@
+@media (max-width: 1024px) {
+    /* -------------------------------------------
+  	           COMMON
+    ---------------------------------------------- */
+    body {
+        font-size: 14px;
+    }
+
+    .pcOnly {
+        display: none !important;
+    }
+    .spOnly {
+        display: block !important;
+    }
+
+    .ctInner {
+		max-width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+    header {
+        display: none;
+    }
+
+    /* --------------------------------------------------------------------------------------
+    Footer
+    --------------------------------------------------------------------------------------- */
+    footer .ftArea {
+        max-width: calc(100% - 40px);
+        margin: 0 20px;
+        display: block;
+    }
+    footer .ftArea .row {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #d4d4d4;
+    }
+    footer .ftArea .row  dt { 
+        margin-bottom: 0;
+    }
+    footer .ftArea .row  dd {
+        display: none;
+        margin-top: 10px;
+    }
+    footer .ftArea .row .ftNavList li a { 
+        font-size: 12px;
+    }
+    footer .ftArea .downloadArea {
+        width: 100%;
+        margin: 40px 0 20px;
+    }
+    footer .ftArea .downloadArea .title {
+        font-size: 14px;
+    }
+    footer .ftArea .downloadArea .downloadList {
+        margin-bottom: 40px;
+    }
+    footer .ftArea .downloadArea .downloadList li a {
+        display: block;
+        margin-right: 10px;
+    }
+    footer .ftArea .downloadArea .downloadList li a img {
+        width: 120px;
+    }
+    footer .ftArea .ctMail {
+        max-width: 250px;
+    }
+    footer .ftArea .ctMail .mailInput {
+        width: 250px;
+        height: 34px;
+        padding: 0 6px 0;
+    }
+    footer .ftArea .ctMail .mailBtn {
+        width: 60px;
+    }
+    footer .copyArea {
+        max-width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        flex-flow: column-reverse;
+    }
+    footer .copyArea  .leftArea {
+        width: 100%;
+        margin-top: 14px;
+    }
+    footer .copyArea  .leftArea .flexCol {
+        display: block;
+    }
+    footer .copyArea  .leftArea .flexCol .ftList {
+        display: flex;
+        margin-top: 6px;
+    }
+    footer .copyArea  .leftArea .flexCol + .flexCol {
+        margin-top: 16px;
+    }
+    footer .copyArea  .leftArea .flexCol .ftList {
+        margin-left: 0;
+    }
+    footer .copyArea  .leftArea .flexCol .ftList li a {
+        margin-left: 4px;
+    }
+    footer .copyArea  .leftArea .flexCol .phNo {
+        margin: 6px 0 0 4px;
+    }
+    footer .copyArea  .leftArea .flexCol .phNo span {
+        display: none;
+    }
+
+    /* -------------------------------------------
+				brands.html
+	---------------------------------------------- */
+	.ctBrand .brandList {
+		display: block;
+	}
+	.ctBrand .brandList:first-child {
+		padding-top: 0;
+	}
+	.ctBrand .brandList dt {
+		width: 100%;
+		padding-left: 0;
+	}
+	.ctBrand .brandList dd {
+		padding: 30px 0 0;
+		width: 100%;
+	}
+	.ctBrand .brandList ul li {
+		width: auto;
+		margin-right: 40px;
+	}
+}

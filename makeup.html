@@ -1,18 +1,640 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-    <title>Kacy Beauty</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kacy Beauty</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta property="og:title" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:type" content="Starlean">
+	<meta property="og:url" content="">
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:description" content="">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/vendor/modaal.css">
+	<link rel="stylesheet" href="css/vendor/slick.css">
+    <link rel="stylesheet" href="css/vendor/slick-theme.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/pc.css">
+	<link rel="stylesheet" href="css/sp.css">
+	<link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-    <div id="makeup">
+    <div id="wrapper" class="ctMakeup">
+        <header>
+			<div id="headArea">
+				<div class="logoArea">
+					<h1 class="logo">
+						<a href="index.html">
+							<img src="images/logo.png" alt="logo" width="168" height="22">
+							<span>logotext</span>
+						</a>
+					</h1>
+					<div class="ctSearch">
+						<input type="text" class="searchInput" placeholder="Search">
+						<button type="submit" class="searchBtn" fdprocessedid="sbrhvi">
+							<img src="images/search.png" alt="search" width="30" height="30">
+						</button>
+					</div>
+				</div>
+				<ul class="navList">
+					<li><a href=""><img src="images/bell.png" alt="bell" width="32" height="32"></a></li>
+					<li><a href=""><img src="images/heart.png" alt="heart" width="32" height="32"></a></li>
+					<li>
+						<a href="basket.html" class="cartIcon">
+							<img src="images/cart.png" alt="cart" width="32" height="32">
+							<span class="cartText">2</span>
+						</a>
+					</li>
+					<li>
+						<a href="#inline" class="inline"><img src="images/user.png" alt="user" width="32" height="32"></a>
+						<div id="inline" style="display:none;">
+							<div class="left">
+								<h2 class="title"><strong>KACY</strong> BEAUTY</h2>
+								<p class="leadTitle">Beauty is whatever bring perfect</p>
+								<ul class="list">
+									<li>WITH US YOU CAN:</li>
+									<li>COMPARE ACROSS 500+ STORES</li>
+									<li>GET ALERTS ON YOUR ITEMS</li>
+									<li>SAVE YOUR SEARCHES</li>
+									<li>MANAGE YOUR SHOPPING LISTS</li>
+									<li>EARN POINTS</li>
+								</ul>
+							</div>
+							<div class="right">
+								<div class="loginForm">
+									<p>Sign in to your account</p>
+									<p class="smallText">Sign in or create an account to enjoy shipping on all orders.</p>
+									<form class="ctForm">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Email Address" fdprocessedid="mzsjel">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Password" fdprocessedid="mzsjel">
+										</div>
+										<div class="flexCol">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="remember" id="remember">
+												<label class="form-check-label" for="remember">
+													Keep me signed in
+												</label>
+											</div>
+											<a href="forgetpassword.html">Forget Password?</a>
+										</div>
+										<button type="submit" class="btn" fdprocessedid="02s8">Sign In</button>
+									</form>
+	
+									<p class="accountText">Don’t have an account? <span class="registerBtn">Create Account</span></p>
+								</div>
+								<div class="registerForm">
+									<p>Create an Account</p>
+									<p class="smallText">Join the Beauty Insider loyalty program. Earn points, get FREE standard shipping, redeem rewards, and more.</p>
+									<form class="ctForm">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Name" fdprocessedid="mzsjel">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Email" fdprocessedid="mzsjel">
+										</div>
+										<div class="form-group">
+											<div class="countryCode">
+												<p>09+</p>
+												<input type="text" name="phone" class="form-control" id="phone" placeholder="" fdprocessedid="pp3h9p">
+											</div>
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Password" fdprocessedid="mzsjel">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="ZIP Code (to hear about store events near you)" fdprocessedid="mzsjel">
+										</div>
+										<div class="flexCol">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" name="remember" id="remember">
+												<label class="form-check-label" for="remember">
+													Keep me signed in
+												</label>
+											</div>
+										</div>
+										<p class="btn loginBtn">Join Now</p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="menuArea">
+				<ul class="menuList">
+					<li>
+						<a href="new_product.html">New</a>
+						<div class="subMenu">
+							<div class="inner">
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href="">All New</a></li>
+										<li><a href="">New Brands</a></li>
+										<li><a href="">New Makeup</a></li>
+										<li><a href="">New Skincare</a></li>
+										<li><a href="">New Hair</a></li>
+										<li><a href="">New Fragrance</a></li>
+										<li><a href="">New Tools & Brushes</a></li>
+										<li><a href="">New Bath & Body</a></li>
+										<li><a href="">New Bags & Travel Cases</a></li>
+										<li><a href="">New Sales</a></li>
+									</ul>
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img1.jpg" alt="ad_img1" width="457" height="457">
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img2.jpg" alt="ad_img2" width="457" height="457">
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img3.jpg" alt="ad_img3" width="457" height="457">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="brands.html">Brands</a>
+						<div class="subMenu">
+							<div class="inner">
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>International Brand A-Z</strong></a></li>
+										<li><a href=""><strong>Local Brand A-Z</strong></a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>New International Brands</strong></a></li>
+										<li><a href="">Glossier</a></li>
+										<li><a href="">Dior</a></li>
+										<li><a href="">PROVEN Skincare</a></li>
+										<li><a href="">Mara Beauty</a></li>
+										<li><a href="">Boy Smells</a></li>
+										<li><a href="">Charlotte Tilbury</a></li>
+										<li><a href="">CLINIQUE</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>New Local Brands</strong></a></li>
+										<li><a href="">Amoe</a></li>
+										<li><a href="">Be Still by Irene</a></li>
+										<li><a href="">Bye Bish</a></li>
+										<li><a href="">Hush</a></li>
+										<li><a href="">Huu</a></li>
+										<li><a href="">The Influence</a></li>
+									</ul>
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img1.jpg" alt="ad_img1" width="457" height="457">
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img2.jpg" alt="ad_img2" width="457" height="457">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="makeup.html">Makeup</a>
+						<div class="subMenu">
+							<div class="inner">
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>All Makeup</strong></a></li>
+										<li><a href=""><strong>New Makeup</strong></a></li>
+										<li><a href=""><strong>Bestsellers</strong></a></li>
+										<li><a href=""><strong>Vegan Makeup</strong></a></li>
+										<li><a href=""><strong>Makeup Palettes</strong></a></li>
+										<li><a href=""><strong>Mini Size</strong></a></li>
+										<li><a href=""><strong>Value Size</strong></a></li>
+										<li><a href=""><strong>Value & Gift Sets</strong></a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Face</strong></a></li>
+										<li><a href="">Foundation</a></li>
+										<li><a href="">BB & CC Cream</a></li>
+										<li><a href="">Tinted Moisturizer</a></li>
+										<li><a href="">Concealer</a></li>
+										<li><a href="">Face Primer</a></li>
+										<li><a href="">Setting Spray & Powder</a></li>
+										<li><a href="">Highlighter</a></li>
+										<li><a href="">Contour</a></li>
+										<li><a href="">Color Correct</a></li>
+										<li><a href="">Face Sets</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Eye</strong></a></li>
+										<li><a href="">Eye Palettes</a></li>
+										<li><a href="">Mascara</a></li>
+										<li><a href="">Eyeliner</a></li>
+										<li><a href="">Eyebrow</a></li>
+										<li><a href="">False Eyelashes</a></li>
+										<li><a href="">Eyeshadow</a></li>
+										<li><a href="">Eyelash Serums</a></li>
+										<li><a href="">Eyebrow Serums</a></li>
+										<li><a href="">Eye Primer</a></li>
+										<li><a href="">Eye Sets</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Lip</strong></a></li>
+										<li><a href="">Lipstick</a></li>
+										<li><a href="">Lip Gloss</a></li>
+										<li><a href="">Lip Balm & Treatment</a></li>
+										<li><a href="">Liquid Lipstick</a></li>
+										<li><a href="">Lip Stain</a></li>
+										<li><a href="">Lip Liner</a></li>
+										<li><a href="">Lip Plumper</a></li>
+										<li><a href="">Lip Sets</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Cheek</strong></a></li>
+										<li><a href="">Blush</a></li>
+										<li><a href="">Bronzer</a></li>
+										<li><a href="">Highlighter</a></li>
+										<li><a href="">Contour</a></li>
+										<li><a href="">Cheek Palettes</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Nail</strong></a></li>
+										<li><a href=""><strong>Brushes & Applicators</strong></a></li>
+										<li><a href=""><strong>Accessories</strong></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="">Skincare</a>
+						<div class="subMenu">
+							<div class="inner">
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>All Skincare</strong></a></li>
+										<li><a href=""><strong>New Skincare</strong></a></li>
+										<li><a href=""><strong>Bestsellers</strong></a></li>
+										<li><a href=""><strong>Vegan Skincare</strong></a></li>
+										<li><a href=""><strong>Makeup Palettes</strong></a></li>
+										<li><a href=""><strong>Mini Size</strong></a></li>
+										<li><a href=""><strong>Value Size</strong></a></li>
+										<li><a href=""><strong>Value & Gift Sets</strong></a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Moisturizers</strong></a></li>
+										<li><a href="">Night Creams</a></li>
+										<li><a href="">Face Oils</a></li>
+										<li><a href="">Mists & Essences</a></li>
+										<li><a href="">BB & CC Creams</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Cleansers</strong></a></li>
+										<li><a href="">Face Wash & Cleansers</a></li>
+										<li><a href="">Exfoliators</a></li>
+										<li><a href="">Makeup Removers</a></li>
+										<li><a href="">Face Wipes</a></li>
+										<li><a href="">Toners</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Treatments</strong></a></li>
+										<li><a href="">Face Serums</a></li>
+										<li><a href="">Blemish & Acne Treatments</a></li>
+										<li><a href="">Facial Peels</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Masks</strong></a></li>
+										<li><a href="">Face Masks</a></li>
+										<li><a href="">Sheet Masks</a></li>
+										<li><a href="">Eye Masks</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Eye Care</strong></a></li>
+										<li><a href="">Eye Creams & Treatments</a></li>
+										<li><a href="">Eye Masks</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Sunscreen</strong></a></li>
+										<li><a href="">Face Sunscreen</a></li>
+										<li><a href="">Body Sunscreen</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Lip Balm & Treatments</strong></a></li>
+										<li><a href=""><strong>High Tech Tools</strong></a></li>
+										<li><a href=""><strong>Wellness</strong></a></li>
+									</ul>
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img2.jpg" alt="ad_img2" width="457" height="457">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="">Hair</a>
+						<div class="subMenu">
+							<div class="inner">
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>All Hair</strong></a></li>
+										<li><a href=""><strong>New Hair</strong></a></li>
+										<li><a href=""><strong>Bestsellers</strong></a></li>
+										<li><a href=""><strong>Vegan Haircare</strong></a></li>
+										<li><a href=""><strong>Makeup Palettes</strong></a></li>
+										<li><a href=""><strong>Mini Size</strong></a></li>
+										<li><a href=""><strong>Value Size</strong></a></li>
+										<li><a href=""><strong>Value & Gift Sets</strong></a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Shampoo & Conditioner</strong></a></li>
+										<li><a href="">Shampoo</a></li>
+										<li><a href="">Conditioner</a></li>
+										<li><a href="">Scalp Scrub</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Styling</strong></a></li>
+										<li><a href="">Styling Creams</a></li>
+										<li><a href="">Dry Shampoo</a></li>
+										<li><a href="">Hair Primer & <br>Heat Protectants</a></li>
+										<li><a href="">Hair Spray</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Treatments</strong></a></li>
+										<li><a href="">Hair Masks</a></li>
+										<li><a href="">Leave-in Conditioners</a></li>
+										<li><a href="">Hair Oil</a></li>
+										<li><a href="">Hair Serums</a></li>
+										<li><a href="">Scalp Treatments</a></li>
+										<li><a href="">Hair Supplements</a></li>
+										<li><a href="">Hair Thinning & Hair Loss</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Hair Dye & Root Touch-Ups</strong></a></li>
+										<li><a href="">Hair Toners</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Tools</strong></a></li>
+										<li><a href="">Hair Dryers</a></li>
+										<li><a href="">Hair Straighteners & Flat Irons</a></li>
+										<li><a href="">Curling Irons</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Curly, Coily, Textured Haircare</strong></a></li>
+										<li><a href=""><strong>Brushes & Combs</strong></a></li>
+										<li><a href=""><strong>Accessories</strong></a></li>
+									</ul>
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img2.jpg" alt="ad_img2" width="457" height="457">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="">Fragrance</a>
+						<div class="subMenu">
+							<div class="inner">
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>All Fragrance</strong></a></li>
+										<li><a href=""><strong>New Fragrance</strong></a></li>
+										<li><a href=""><strong>Bestsellers</strong></a></li>
+										<li><a href=""><strong>Vegan Fragrance</strong></a></li>
+										<li><a href=""><strong>Makeup Palettes</strong></a></li>
+										<li><a href=""><strong>Luxury Fragrance</strong></a></li>
+										<li><a href=""><strong>Value Size</strong></a></li>
+										<li><a href=""><strong>Value & Gift Sets</strong></a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Women</strong></a></li>
+										<li><a href="">Perfume</a></li>
+										<li><a href="">Conditioner</a></li>
+										<li><a href="">Scalp Scrub</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Men</strong></a></li>
+										<li><a href="">Cologne</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Candles & Home Scents</strong></a></li>
+										<li><a href="">Candles</a></li>
+										<li><a href="">Diffusers</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Value & Gift Sets</strong></a></li>
+										<li><a href="">Perfume Gift Sets</a></li>
+										<li><a href="">Cologne Gift Sets</a></li>
+										<li><a href="">Home Gift Sets</a></li>
+									</ul>
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img1.jpg" alt="ad_img1" width="457" height="457">
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img2.jpg" alt="ad_img2" width="457" height="457">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="">Tools & Brushes</a>
+						<div class="subMenu">
+							<div class="inner">
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>All Tools & Brushes</strong></a></li>
+										<li><a href=""><strong>New Tools & Brushes</strong></a></li>
+										<li><a href=""><strong>Bestsellers</strong></a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Brushes & Applicators</strong></a></li>
+										<li><a href="">Brush Sets</a></li>
+										<li><a href="">Face Brushes</a></li>
+										<li><a href="">Eye Brushes</a></li>
+										<li><a href="">Lip Brushes</a></li>
+										<li><a href="">Sponges & Applicators</a></li>
+										<li><a href="">Brush Cleansers</a></li>
+										<li><a href="">Facial Cleansing Brushes</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Hair Tools</strong></a></li>
+										<li><a href="">Hair Dryers</a></li>
+										<li><a href="">Straighteners & Flat Irons</a></li>
+										<li><a href="">Curling Irons</a></li>
+										<li><a href="">Brushes & Combs</a></li>
+										<li><a href="">Accessories</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Beauty Tools</strong></a></li>
+										<li><a href="">Anti-Aging</a></li>
+										<li><a href="">Teeth Whitening</a></li>
+										<li><a href="">Hair Removal</a></li>
+										<li><a href="">Tweezers & Eyebrow</a></li>
+										<li><a href="">Manicure & Pedicure</a></li>
+										<li><a href="">Eyelash Curlers</a></li>
+										<li><a href="">Sharpeners</a></li>
+									</ul>
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img3.jpg" alt="ad_img3" width="457" height="457">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="">Bath & Body</a>
+						<div class="subMenu">
+							<div class="inner">
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>All Bath & Body</strong></a></li>
+										<li><a href=""><strong>New Bath & Body</strong></a></li>
+										<li><a href=""><strong>Bestsellers</strong></a></li>
+										<li><a href=""><strong>Mini Size</strong></a></li>
+										<li><a href=""><strong>Value Size</strong></a></li>
+										<li><a href=""><strong>Value & Gift Sets</strong></a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Bath & Shower</strong></a></li>
+										<li><a href="">Body Wash & Shower Gel</a></li>
+										<li><a href="">Scrub & Exfoliants</a></li>
+										<li><a href="">Bath Soaks & Bubble Bath</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Body Moisturizers</strong></a></li>
+										<li><a href="">Body Lotions & Body Oils</a></li>
+										<li><a href="">Hand Cream & Foot Cream</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Body Care</strong></a></li>
+										<li><a href="">Intimate Care & Vibrators</a></li>
+										<li><a href="">Hand Sanitizer & Hand Soap</a></li>
+										<li><a href="">Cellulite & Stretch Marks</a></li>
+										<li><a href="">Deodorant & Antiperspirant</a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Sunscreen</strong></a></li>
+										<li><a href="">Face Sunscreen</a></li>
+										<li><a href="">Body Sunscreen</a></li>
+									</ul>
+									<ul class="subMenuList">
+										<li><a href=""><strong>Candles & Home Scents</strong></a></li>
+									</ul>
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img1.jpg" alt="ad_img1" width="457" height="457">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="">Bags & Travel Cases</a>
+						<div class="subMenu">
+							<div class="inner">
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>All Sale</strong></a></li>
+										<li><a href=""><strong>Makeup</strong></a></li>
+										<li><a href=""><strong>Skincare</strong></a></li>
+										<li><a href=""><strong>Healthcare</strong></a></li>
+										<li><a href=""><strong>Tools & Brushes</strong></a></li>
+										<li><a href=""><strong>Bath & Body</strong></a></li>
+										<li><a href=""><strong>Bags & Travel Cases</strong></a></li>
+										<li><a href=""><strong>Mini Size</strong></a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Beauty Offer</strong></a></li>
+									</ul>
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img2.jpg" alt="ad_img2" width="457" height="457">
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img3.jpg" alt="ad_img3" width="457" height="457">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="">Sales</a>
+						<div class="subMenu">
+							<div class="inner">
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>All Sale</strong></a></li>
+										<li><a href=""><strong>Makeup</strong></a></li>
+										<li><a href=""><strong>Skincare</strong></a></li>
+										<li><a href=""><strong>Healthcare</strong></a></li>
+										<li><a href=""><strong>Tools & Brushes</strong></a></li>
+										<li><a href=""><strong>Bath & Body</strong></a></li>
+										<li><a href=""><strong>Bags & Travel Cases</strong></a></li>
+										<li><a href=""><strong>Mini Size</strong></a></li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul class="subMenuList">
+										<li><a href=""><strong>Beauty Offer</strong></a></li>
+									</ul>
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img1.jpg" alt="ad_img1" width="457" height="457">
+								</div>
+								<div class="rowImg">
+									<img src="images/ad_img2.jpg" alt="ad_img2" width="457" height="457">
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!-- / header -->
+        
         <div class="banner">
             <div class="left">
                 <h1>CELEBRATE YOUR LASHES</h1>
@@ -20,20 +642,20 @@
                 <button>Shop Now</button>
             </div>
             <div class="right">
-                <img src="assets/img/bnr_img2.jpg" alt="bnr_img2">
+                <img src="images/bnr_img2.jpg" alt="bnr_img2">
             </div>
         </div>
-        <div class="container">
+        <div class="ctInner">
             <div class="productRow">
                 <div class="titleArea">
                     <span class="title">Face</span>
-                    <a href="#" class="viewAll">View All</a>
+                    <a href="makeup_face.html" class="viewAll">View All</a>
                 </div>
                 <div class="products">
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -44,7 +666,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -55,7 +677,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -66,7 +688,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -77,7 +699,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -90,13 +712,13 @@
             <div class="productRow">
                 <div class="titleArea">
                     <span class="title">Eye</span>
-                    <a href="#" class="viewAll">View All</a>
+                    <a href="makeup_face.html" class="viewAll">View All</a>
                 </div>
                 <div class="products">
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -107,7 +729,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -118,7 +740,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -129,7 +751,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -140,7 +762,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -153,13 +775,13 @@
             <div class="productRow">
                 <div class="titleArea">
                     <span class="title">Lip</span>
-                    <a href="#" class="viewAll">View All</a>
+                    <a href="makeup_face.html" class="viewAll">View All</a>
                 </div>
                 <div class="products">
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -170,7 +792,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -181,7 +803,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -192,7 +814,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -203,7 +825,7 @@
                     <div class="product">
                         <button class="favourite top"></button>
                         <figure class="productImg">
-                            <img src="assets/img/product_1.jpg" alt="product_1">
+                            <img src="images/product_1.jpg" alt="product_1">
                             <a href="#" class="quickView">Quick View</a>
                         </figure>
                         <p class="pTitle">Urban Decay</p>
@@ -214,10 +836,91 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+			<div class="ftArea">
+				<dl class="row">
+					<dt class="accordion">About Kacy Beauty</dt>
+					<dd>
+						<ul class="ftNavList">
+							<li><a href="">About Kacy Beauty</a></li>
+							<li><a href="">Careers</a></li>
+							<li><a href="">Kacy Beauty Values</a></li>
+							<li><a href="">Supply Chain Transparency</a></li>
+							<li><a href="">Events</a></li>
+							<li><a href="">Gift Cards</a></li>
+							<li><a href="">Like on Facebook</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="row">
+					<dt class="accordion">My Account</dt>
+					<dd>
+						<ul class="ftNavList">
+							<li><a href="">Kacy Beauty Credit Card</a></li>
+							<li><a href="">My Profile</a></li>
+							<li><a href="">Order Status</a></li>
+							<li><a href="">Purchase History</a></li>
+							<li><a href="">Account Settings</a></li>
+							<li><a href="">Loves</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="row">
+					<dt class="accordion">Help</dt>
+					<dd>
+						<ul class="ftNavList">
+							<li><a href="">Customer Service</a></li>
+							<li><a href="">Refunds</a></li>
+							<li><a href="">Delivery Options</a></li>
+							<li><a href="">Billing</a></li>
+							<li><a href="">Accessibility</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="downloadArea">
+					<p class="title">DOWNLOAD THE KACY BEAUTY APP</p>
+					<ul class="downloadList">
+						<li><a href><img src="images/download_applestore.png" alt="download_applestore" width="98" height="28"></a></li>
+						<li><a href><img src="images/download_playstore.png" alt="download_playstore" width="98" height="28"></a></li>
+					</ul>
+					<p class="title">Sign up for Kacy Beauty</p>
+					<div class="ctMail">
+						<input type="text" class="mailInput" placeholder="Enter your email address">
+						<button type="submit" class="mailBtn" fdprocessedid="sbrhvi">
+							Sign Up
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="copyArea">
+				<div class="leftArea">
+					<div class="flexCol">
+						<p>Copyright 2023 Kacy Beauty All rights reserved. </p>
+						<ul class="ftList">
+							<li><a href>Privacy Policy</a> | </li>
+							<li><a href>Terms of Use</a> | </li>
+							<li><a href>Sales & Refunds</a> | </li>
+							<li><a href>Legal</a> | </li>
+							<li><a href>Site Map</a></li>
+						</ul>
+					</div>
+					<div class="flexCol">
+						<p>Email Address: <a href="mailto:help@kacybeauty.com"></a>help@kacybeauty.com</p>
+						<p class="phNo"><span> | </span>Contact Number: (+959) 400080811, 400080822, 400080833</p>
+					</div>
+				</div>
+				<figure class="socailArea">
+					<a href><img src="images/facebook.svg" alt="facebook" width="32" height="32"></a>
+				</figure>
+			</div>
+		</footer>
+		<!-- / footer -->
     </div>
-    <script src="assets/js/vendor/jquery-3.6.4.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/other.js"></script>
+    
+    <script src="js/jquery-3.6.4.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/other.js"></script>
 </body>
 
 </html>
