@@ -19,10 +19,125 @@
 		box-sizing: border-box;
 	}
 
-    header {
-        display: none;
+    /* fullTitle */
+    .fullTitle {
+        font-size: 20px;
+        margin: 30px 0 20px;
     }
 
+    /*modaal*/
+    .modaal-content-container  {
+        display: block;
+    }
+    .modaal-content-container div.left {
+        display: none;
+    }
+    .modaal-content-container div.right {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        padding: 40px 50px 80px;
+        box-sizing: border-box;
+    }
+    
+    .modaal-content-container div.left .title {
+        font-size: 24px;
+    }
+    .modaal-content-container div.left .leadTitle {
+        font-size: 14px;
+    }
+    
+    /* .modaal-content-container div.right .flexCol {
+        margin: 8px 0 40px;
+        width: 302px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    } */
+   
+
+   /* --------------------------------------------------------------------------------------
+    Header
+    --------------------------------------------------------------------------------------- */
+    header {
+        /* height: 138px; */
+    }
+    header #headArea {
+        width: 100%;
+        margin: 12px auto;
+        padding: 0 20px;
+    }
+    header #headArea .logoArea {
+        display: flex;
+    }
+    header #headArea .logoArea .logo a {
+        width: 100px;
+        margin-right: 0;
+    }
+    header .ctSearch {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+    header .ctSearch .searchInput {
+        width: 100%;
+    }
+    header .ctSearch .searchBtn {
+        top: 2px;
+    }
+    header #headArea .navList li a img {
+        width: 20px;
+    }
+    header #headArea .navList li:nth-child(3) a img {
+        width: 22px;
+        margin-top: -2px;
+    }
+    header #menuArea {
+        width: 100%;
+        /* min-width: 300px;
+        overflow-y: scroll; */
+        background: #fff;
+    }
+    header #menuArea .menuList {
+        max-width: 100%;
+        margin: 6px 14px;
+        min-width: 300px;
+        overflow-y: scroll;
+    }
+    header #menuArea .menuList li a {
+        color: #000;
+        background-color: #fff;
+        box-shadow: 0 0 6px rgba(0,0,0,.2);
+        transition: color .2s;
+        font-size: 12px;
+        padding: 10px;
+        border-radius: 4px;
+        margin-left: 8px;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        white-space: pre;
+    }
+    header #menuArea .menuList li a::before,
+    header #menuArea .menuList li .subMenu {
+       display: none;
+    }
+    /* sub header */
+    .subHeader {
+        padding: 12px 20px 0;
+        box-sizing: border-box;
+    }
+    .subHeader .menu {
+        max-width: 100%;
+        min-width: 300px;
+        overflow-y: scroll;
+        margin: 0 auto;
+        display: flex;
+    }
+    .subHeader .menu li a {
+        font-size: 12px;
+        white-space: pre;
+    }
     /* --------------------------------------------------------------------------------------
     Footer
     --------------------------------------------------------------------------------------- */
@@ -39,6 +154,22 @@
     }
     footer .ftArea .row  dt { 
         margin-bottom: 0;
+        position: relative;
+    }
+    .accordion::before {
+        position: absolute;
+        content: '';
+        display: block;
+        top: 2px;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        background: url(../images/plus.png) no-repeat ;
+        background-size: 20px auto;
+    }
+    .accordion.active::before {
+        background: url(../images/minus.png) no-repeat ;
+        background-size: 20px auto;
     }
     footer .ftArea .row  dd {
         display: none;
@@ -88,8 +219,11 @@
     footer .copyArea  .leftArea .flexCol {
         display: block;
     }
+    footer .copyArea  .leftArea .flexCol p {
+        font-size: 12px;
+    }
     footer .copyArea  .leftArea .flexCol .ftList {
-        display: flex;
+        display: block;
         margin-top: 6px;
     }
     footer .copyArea  .leftArea .flexCol + .flexCol {
@@ -99,15 +233,347 @@
         margin-left: 0;
     }
     footer .copyArea  .leftArea .flexCol .ftList li a {
-        margin-left: 4px;
+        margin-left: 0;
+        font-size: 12px;
     }
     footer .copyArea  .leftArea .flexCol .phNo {
-        margin: 6px 0 0 4px;
+        margin: 6px 0 0 0;
     }
     footer .copyArea  .leftArea .flexCol .phNo span {
         display: none;
     }
 
+    /*mainTitle*/
+    .mainTitle {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    /*categoryBlock*/
+    .categoryBlock {
+        margin-top: 150px;
+        overflow: auto;
+    }
+    .categoryBlock .categoryList {
+        flex-flow: row;
+    }
+    .categoryBlock .title {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .categoryBlock .categoryList .categoryCard {
+        width: 90px;
+        height: 110px;
+    }
+    /*categoryBlock end*/
+
+    .titleArea {
+        align-items: center;
+    }
+    .titleArea .title {
+        font-size: 18px;
+    }
+
+    /*product*/
+    .product .productImg{
+        text-align: center;
+    }
+    .product .figGroup figure {
+        width: 65px;
+    }
+    .product .btn {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    /*product end*/
+
+    /*product row*/
+    .productRow .products {
+        flex-flow: wrap;
+    }
+ 
+    .productRow .products .product {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    /*product row end*/
+
+    /*twoCol*/
+    .twoCol {
+       flex-flow: wrap;
+    }
+    .twoCol .category {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .twoCol .category .categoryTitle {
+        font-size: 18px;
+    }
+    .twoCol .category .inputRange {
+        max-width: 375px;
+    }
+    .twoCol .category .ads {
+        text-align: center;
+    }
+    .twoCol .list {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .twoCol .list .productBanner .bnrText {
+       flex-flow: wrap;
+    }
+    .twoCol .list .productBanner .bnrText .left .label1{
+        font-size: 16px;
+    }
+    .twoCol .list .productBanner .bnrText .left .label2{
+        text-align: center;
+        font-size: 10px;
+    }
+    .twoCol .list .productBanner .bnrText .right .label3{
+        text-align: right;
+        font-size: 10px;
+    }
+    .twoCol .list .productBanner .bnrText .right .label3 span{
+        font-size: 10px;
+    }
+    .twoCol .list .products {
+        justify-content: space-between;
+    }
+    .twoCol .list .products .product{
+        width: 45%;
+    }
+    .twoCol .list .btnArea .showingItems {
+        position: absolute;
+        left: 50%;
+        top: 70px;
+        font-size: 13px;
+        color: #808080;
+        transform: translate(-50%);
+    }
+    /*twoCol end*/
+
+    /*ad block*/
+    .adBlock {
+        justify-content: space-between;
+        flex-flow: wrap;
+    }
+    .adBlock .ads{
+        margin-right: 0px;
+        width: 45%;
+    }
+    /*ad block end*/
+
+    /*ad block2*/
+    .adBlock2 {
+        margin-top: 50px;
+    }
+
+    .adBlock2 .ads{
+        text-align: center;
+    }
+
+    .adBlock2 .ads figcaption{
+        margin-top: 5px;
+    }
+    /*ad block2 end*/
+
+    /*banner*/
+    .banner {
+        position: relative;
+    }
+
+    .banner .bannerBtn {
+        border: none;
+        border-radius: 5px;
+        background: #fff;
+        box-sizing: border-box;
+        position: absolute;
+        padding: 10px 25px;
+        font-size: 12px;
+        left: calc((100% - 105px)/2);
+        bottom: 15%;
+    }
+    /*banner end*/
+
+    /*itemRow*/
+    .itemRow {
+        display: flex;
+    }
+    .itemRow:last-child {
+        border-bottom: none;
+        margin: 0;
+    }
+    .itemRow .itemImg { 
+        width: 60px;
+    }
+    .itemRow .details { 
+        width: calc(100% - 160px);
+        margin: 0 10px;
+        font-size: 13px;
+    }
+    .itemRow .price { 
+        width: 80px;
+        font-size: 12px;
+    }
+    .itemRow .code { 
+        color: #868e96;
+        margin-top: 2px;
+        font-size: 12px;
+    }
+    .itemRow .quality .qtySelect {
+        font-size: 14px;
+        height: 30px;
+        min-width: 42px;
+    }
+    .itemRow .quality .linkList {
+        display: block;
+        margin-left: 16px;
+    }
+    .itemRow .quality .linkList li a span {
+        display: none;
+    }
+    .itemRow .quality .linkList li:last-child a {
+        margin-left: 0;
+    }
+
+    /*recentView */
+    .recentView {
+        padding-top: 24px !important;
+        margin-top: 40px;
+    } 
+    
+    .recentView .title {
+        font-size: 18px;
+    }
+    
+    /*quickViewPopup*/
+    .quickViewInner {
+        padding: 30px;
+        flex-flow: wrap;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .quickViewInner .imgBlock {
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .quickViewInner .imgBlock .full-size-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .quickViewInner .detailBlock {
+        width: 100%;
+    }
+
+    .quickViewInner .detailBlock .colorChart {
+        height: auto;
+    }
+    /*quickViewPopup end*/
+
+    /*loves no data*/
+   .loves {
+        margin: 40px auto 0;
+        max-width: 100%;
+    }
+
+    /* --------------------------------------
+        basket.html & checkout.html 
+    ----------------------------------------- */
+    .ctBasket .basketBlock,
+    .ctCheckOut .basketBlock {
+        max-width: 100%;
+        padding: 30px 20px 60px;
+        box-sizing: border-box;
+    }
+    .ctBasket .basketBlock .inner,
+    .ctCheckOut .basketBlock .inner {
+        display: block;
+    }
+    .ctBasket .basketBlock .inner .leftArea,
+    .ctCheckOut .basketBlock .inner .leftArea {
+        width: 100%;
+       min-width: 300px;
+       overflow-y: scroll;
+    }
+    .basketBlock .inner .itemBlock {
+        padding: 12px 10px 0;
+    }
+    .basketBlock .inner .rightArea {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .basketBlock .inner .rightArea .payment,
+    .basketBlock .inner .rightArea .cashout {
+        padding: 14px;
+    }
+    .basketBlock .inner .rightArea .cashout dl {
+        font-size: 12px;
+    }
+    
+    .basketBlock .inner .rightArea .cashout .btn {
+        margin-top: 16px;
+    }
+
+    .basketBlock .inner .rightArea .payment {
+        margin-top: 20px;
+    }
+
+    .basketBlock .inner .rightArea .payment .title {
+        font-size: 14px;
+    }
+
+    .basketBlock .inner .rightArea .payment .paymentList {
+        display: flex;
+    }
+
+    .basketBlock .inner .rightArea .payment .paymentList li img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    /* -------------------------------------------
+	           checkout.html
+    ---------------------------------------------- */
+    .ctCheckOut .checkoutBlock .row dl dt {
+        font-size: 18px;
+    }
+
+    /* -------------------------------------------
+	           love.html
+    ---------------------------------------------- */
+    .ctLove .loveBlock {
+        max-width: 100%;
+        padding: 30px 20px 60px;
+        box-sizing: border-box;
+    }
+    .ctLove .itemRow .details {
+        width: calc(100% - 230px);
+    }
+    .ctLove .itemRow .loveBtn {
+        display: flex;
+        width: 120px;
+        margin-left: 10px;
+    }
+    .ctLove .itemRow .loveBtn .icon {
+        width: 18px;
+        margin: 8px 0 0 10px;
+    }
+    .ctLove .itemRow .loveBtn .addBtn {
+        width: 90px;
+        font-size: 11px;
+        padding: 10px 6px;
+    }
+    .ctLove .itemRow .price {
+        font-size: 12px;
+    }
+    
     /* -------------------------------------------
 				brands.html
 	---------------------------------------------- */
@@ -129,4 +595,120 @@
 		width: auto;
 		margin-right: 40px;
 	}
+
+    /* -------------------------------------------
+	account_information.html
+    ---------------------------------------------- */
+    .ctAccountInfo .infoArea .row {
+        width: 100%;
+    }
+    .ctAccountInfo .infoArea .row dt {
+        width: 100px;
+    }
+    .ctAccountInfo .infoArea .row dd {
+        width: calc(100% - 100px);
+    }
+    .ctAccountInfo .infoArea .row .cols .img {
+        width: 16px;
+    }
+    .ctAccountInfo .infoArea .formArea .row .field {
+        width: 240px;
+        height: 40px;
+        padding: 8px;
+    }
+    .ctAccountInfo .infoArea .formArea .row .btnList {
+        width: 240px;
+    }
+
+    /* -------------------------------------------
+	saved_addresses.html & payments.html
+    ---------------------------------------------- */
+    .ctAccountSetting .row {
+        width: 100%;
+    }
+    .ctAccountSetting .row dt {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .ctAccountSetting .row dt label {
+        position: relative;
+        top: -2px;
+        cursor: pointer;
+    }
+    .ctAccountSetting .row dd,
+    .ctAccountSetting .formArea,
+    .ctAccountSetting .formArea .btnList {
+        width: 100%;
+    }
+    .ctAccountSetting .addBtn {
+        top: 7px;
+        font-size: 13px;
+    }
+    /* -------------------------------------------
+	details_1.html & details_2.html
+    ---------------------------------------------- */
+    .useWith {
+        width: 100%;
+        padding: 24px 0;
+    }
+    .useWith .title {
+        font-size: 18px;
+    }
+    .useWith .usewithLists {
+        display: block;
+    }
+    .useWith .usewithLists .product {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .tab-list li a {
+        padding: 10px 7px;
+        font-size: 12px;
+    }
+    .tab-panel {
+        padding: 10px;
+    }
+    .ctDetail .detailInner {
+        max-width: 100%;
+        padding: 30px 20px 60px;
+        box-sizing: border-box;
+    }
+    .ctDetail .quickViewInner .imgBlock {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .ctDetail .quickViewInner .detailBlock {
+        width: 100%;
+    }
+    .ctDetail .slider {
+        margin-left: 60px;
+    }
+    .ctDetail .quickViewInner .imgBlock .full-size-image {
+        width: 180px;
+        height: 180px;
+    }
+     .ctDetail .slider .slick-prev {
+        left: 20px;
+        background: url(../images/left_arr.png) no-repeat;
+        background-size: 20px auto;
+    }
+    .ctDetail .slider .slick-next {
+        right: 20px;
+        background: url(../images/right_arr.png) no-repeat;
+        background-size: 20px auto;
+    }
+    .ctDetail .slick-slide > A > IMG {
+        width: 80%;
+    }
+    .ctDetail .slick-dots {
+        left: -60px;
+    }
+    .ctDetail .slick-dots LI {
+        width: 60px;
+        height: 60px;
+    }
+    .ctDetail .slick-dots LI BUTTON {
+        width: 80%;
+    }
+      
 }

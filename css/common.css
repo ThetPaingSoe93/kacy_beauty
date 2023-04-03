@@ -100,6 +100,26 @@ img {
     vertical-align: middle;
 }
 
+input[type='radio'] {
+    accent-color: #000;
+}
+
+.red {
+	color: #C00000;
+}
+
+.outStock,
+.limitEdition {
+    display: inline-block;
+	background-color: #000;
+	color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    margin: 0 8px 10px 0;
+	font-size: 11px;
+}
 /* -------------------------------------------
 	           COMMON
 ---------------------------------------------- */
@@ -300,11 +320,11 @@ header #headArea .logoArea .logo a {
 header #headArea .logoArea .logo a span {
 	display: none;
 }
-header #headArea .logoArea .ctSearch {
+header .ctSearch {
 	width: 420px;
 	position: relative;
 }
-header #headArea .logoArea .ctSearch .searchInput {
+header .ctSearch .searchInput {
 	width: 420px;
 	height: 34px;
 	box-sizing: border-box;
@@ -313,7 +333,7 @@ header #headArea .logoArea .ctSearch .searchInput {
 	padding-left: 36px;
 	border-radius: 50px;
 }
-header #headArea .logoArea .ctSearch .searchBtn {
+header .ctSearch .searchBtn {
 	width: 30px;
 	height: 30px;
 	position: absolute;
@@ -326,6 +346,7 @@ header #headArea .logoArea .ctSearch .searchBtn {
 }
 header #headArea .navList {
 	display: flex;
+	align-items: center;
 	margin: 0 -8px;
 }
 header #headArea .navList li a {
@@ -353,7 +374,7 @@ header #headArea .navList li .cartIcon .cartText {
 header #headArea .navList li a img {
 	width: 24px;
 }
-header #headArea .navList li:nth-child(3) a img {
+header #headArea .navList li .cartIcon img {
 	width: 28px;
 	margin-top: -2px;
 }
@@ -436,6 +457,82 @@ header #menuArea .menuList li:hover .subMenu {
 	visibility: visible;
 	opacity: 1;
 }
+
+/* sub header */
+.subHeader {
+	margin-top: 138px;
+	background-color: #ccc;
+	padding: 20px 0 0;
+}
+.subHeader .menu {
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+}
+.subHeader .menu li {
+	margin-left: 50px;
+}
+.subHeader .menu li:first-child {
+	margin-left: 0;
+}
+.subHeader .menu li a {
+	color: #000;
+	display: inline-block;
+	padding-bottom: 15px;
+	border-bottom: 3px solid transparent;
+	transition: all 0.5s;
+}
+.subHeader .menu li a:hover,
+.subHeader .menu li a.active {
+	border-bottom: 3px solid #000;
+	text-decoration: none;
+}
+
+/*account*/
+.account {
+	position: relative;
+	z-index: 2;
+}
+.account div {
+	display: block;
+	width: 120px;
+	padding: 8px 6px 6px;
+	box-sizing: border-box;
+	cursor: pointer;
+	text-align: center;
+}
+.account div img {
+	width: 22px;
+	padding-left: 5px;
+}
+.account .accountNav {
+	position: absolute;
+	top: 5%;
+	right: 0;
+	left: 0;
+	display: none;
+	width: 110px;
+	border-radius: 5px;
+	background: white;
+	padding-top: 40px;
+	z-index: -1;
+	box-sizing: border-box;
+}
+.account .accountNav li a {
+	display: block;
+	border-bottom: 1px solid #d9d9d9;
+	padding: 6px;
+	text-align: left;
+	color: #000;
+}
+.account .accountNav li a img {
+	width: 18px !important;
+	margin-right: 10px;
+}
+.account .accountNav li:last-child a {
+	border: none;
+}
+
 
 /* --------------------------------------------------------------------------------------
  Footer

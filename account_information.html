@@ -35,7 +35,7 @@
 							<span>logotext</span>
 						</a>
 					</h1>
-					<div class="ctSearch">
+					<div class="ctSearch pcOnly">
 						<input type="text" class="searchInput" placeholder="Search">
 						<button type="submit" class="searchBtn" fdprocessedid="sbrhvi">
 							<img src="images/search.png" alt="search" width="30" height="30">
@@ -43,8 +43,23 @@
 					</div>
 				</div>
 				<ul class="navList">
+					<li>   
+						<!-- account --->
+						<div class="account">
+							<div class="accountBtn">
+								<img src="images/user_fill.png" alt="user_fill">
+								<span>Hi, John</span>
+							</div>
+							<ul class="accountNav">
+								<li><a href="orders_history.html"><img src="images/box.png" alt=""><span>Orders</span></a></li>
+								<li><a href="love.html"><img src="images/heart.png" alt=""><span>Loves</span></a></li>
+								<li><a href="logout.html"><img src="images/logout.png" alt="">Signup</a></li>
+							</ul>
+						</div>
+						<!-- /account --->
+					</li>
 					<li><a href=""><img src="images/bell.png" alt="bell" width="32" height="32"></a></li>
-					<li><a href=""><img src="images/heart.png" alt="heart" width="32" height="32"></a></li>
+					<li><a href="love.html"><img src="images/heart.png" alt="heart" width="32" height="32"></a></li>
 					<li>
 						<a href="basket.html" class="cartIcon">
 							<img src="images/cart.png" alt="cart" width="32" height="32">
@@ -128,6 +143,12 @@
 						</div>
 					</li>
 				</ul>
+			</div>
+			<div class="ctSearch spOnly">
+				<input type="text" class="searchInput" placeholder="Search">
+				<button type="submit" class="searchBtn" fdprocessedid="sbrhvi">
+					<img src="images/search.png" alt="search" width="30" height="30">
+				</button>
 			</div>
 			<div id="menuArea">
 				<ul class="menuList">
@@ -636,22 +657,22 @@
 
 		<div class="subHeader">
 			<ul class="menu">
-				<li><a href="" class="active">Account Information</a></li>
-				<li><a href="">Saved Addresses</a></li>
-				<li><a href="">Payments & Credits</a></li>
-				<li><a href="">Email & Mail Preferences</a></li>
-				<li><a href="">Recent Orders</a></li>
-				<li><a href="">Orders History</a></li>
+				<li><a href="account_information.html" class="active">Account Information</a></li>
+				<li><a href="saved_addresses.html">Saved Addresses</a></li>
+				<li><a href="payments.html">Payments & Credits</a></li>
+				<li><a href="email_preferences.html">Email & Mail Preferences</a></li>
+				<li><a href="recent_orders.html">Recent Orders</a></li>
+				<li><a href="orders_history.html">Orders History</a></li>
 			</ul>
 		</div>
 
 		<div class="ctInner">
 			<section class="infoArea">
-				<h2 class="leadTitle">Account Information</h2>
+				<h2 class="fullTitle">Account Information</h2>
 				<dl class="row">
 					<dt>Name</dt>
 					<dd>
-						<div class="twoCol">
+						<div class="cols">
 							<p>Pyae Phyo Paing</p>
 							<img src="images/save_img.png" alt="save_img" width="35" height="35" class="img">
 						</div>
@@ -660,7 +681,7 @@
 				<dl class="row">
 					<dt>Email</dt>
 					<dd>
-						<div class="twoCol">
+						<div class="cols">
 							<p>pppaing@gmail.com</p>
 							<button class="editBtn">Edit</button>
 						</div>
@@ -685,7 +706,7 @@
 				<dl class="row">
 					<dt>Password</dt>
 					<dd>
-						<div class="twoCol">
+						<div class="cols">
 							<p>. . . . . . . . . .</p>
 							<button class="editBtn">Edit</button>
 						</div>
@@ -804,6 +825,7 @@
 
 	<script src="js/jquery-3.6.4.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/vendor/slick.min.js"></script>
 	<script src="js/vendor/modaal.min.js"></script>
 	<script src="js/other.js"></script>
 </body>

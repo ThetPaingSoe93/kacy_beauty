@@ -27,7 +27,7 @@
 
 <body>
     <div id="wrapper" class="ctMakeup">
-        <header>
+		<header>
 			<div id="headArea">
 				<div class="logoArea">
 					<h1 class="logo">
@@ -36,7 +36,7 @@
 							<span>logotext</span>
 						</a>
 					</h1>
-					<div class="ctSearch">
+					<div class="ctSearch pcOnly">
 						<input type="text" class="searchInput" placeholder="Search">
 						<button type="submit" class="searchBtn" fdprocessedid="sbrhvi">
 							<img src="images/search.png" alt="search" width="30" height="30">
@@ -44,8 +44,23 @@
 					</div>
 				</div>
 				<ul class="navList">
+					<li>   
+						<!-- account --->
+						<div class="account">
+							<div class="accountBtn">
+								<img src="images/user_fill.png" alt="user_fill">
+								<span>Hi, John</span>
+							</div>
+							<ul class="accountNav">
+								<li><a href="orders_history.html"><img src="images/box.png" alt=""><span>Orders</span></a></li>
+								<li><a href="love.html"><img src="images/heart.png" alt=""><span>Loves</span></a></li>
+								<li><a href="logout.html"><img src="images/logout.png" alt="">Signup</a></li>
+							</ul>
+						</div>
+						<!-- /account --->
+					</li>
 					<li><a href=""><img src="images/bell.png" alt="bell" width="32" height="32"></a></li>
-					<li><a href=""><img src="images/heart.png" alt="heart" width="32" height="32"></a></li>
+					<li><a href="love.html"><img src="images/heart.png" alt="heart" width="32" height="32"></a></li>
 					<li>
 						<a href="basket.html" class="cartIcon">
 							<img src="images/cart.png" alt="cart" width="32" height="32">
@@ -94,7 +109,7 @@
 								</div>
 								<div class="registerForm">
 									<p>Create an Account</p>
-									<p class="smallText">Join the Beauty Insider loyalty program. Earn points, get FREE standard shipping, redeem rewards, and more.</p>
+									<p class="smallText">Join the Beauty Insider loyalty program. Earn points, <br class="spOnly">get FREE standard shipping, redeem rewards, and more.</p>
 									<form class="ctForm">
 										<div class="form-group">
 											<input type="text" class="form-control" placeholder="Name" fdprocessedid="mzsjel">
@@ -129,6 +144,12 @@
 						</div>
 					</li>
 				</ul>
+			</div>
+			<div class="ctSearch spOnly">
+				<input type="text" class="searchInput" placeholder="Search">
+				<button type="submit" class="searchBtn" fdprocessedid="sbrhvi">
+					<img src="images/search.png" alt="search" width="30" height="30">
+				</button>
 			</div>
 			<div id="menuArea">
 				<ul class="menuList">
@@ -634,17 +655,26 @@
 			</div>
 		</header>
 		<!-- / header -->
+		
+        <div class="pcOnly">
+			<div class="banner">
+				<div class="left">
+					<h1>CELEBRATE YOUR LASHES</h1>
+					<p>Buy a full-size, bestselling mascara and get another at 50% OFF</p>
+					<button>Shop Now</button>
+				</div>
+				<div class="right">
+					<img src="images/bnr_img2.jpg" alt="bnr_img2">
+				</div>
+			</div>
+		</div>
+		<div class="spOnly">
+			<div class="banner">
+				<img src="images/makeup_banner.png" alt="makeup_banner">
+				<button class="bannerBtn">Shop Now</button>
+			 </div>
+		</div>
         
-        <div class="banner">
-            <div class="left">
-                <h1>CELEBRATE YOUR LASHES</h1>
-                <p>Buy a full-size, bestselling mascara and get another at 50% OFF</p>
-                <button>Shop Now</button>
-            </div>
-            <div class="right">
-                <img src="images/bnr_img2.jpg" alt="bnr_img2">
-            </div>
-        </div>
         <div class="ctInner">
             <div class="productRow">
                 <div class="titleArea">

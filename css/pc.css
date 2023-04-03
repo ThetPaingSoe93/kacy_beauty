@@ -17,6 +17,15 @@
 	margin: 170px auto 100px;
 }
 
+/* fullTitle */
+.fullTitle {
+	font-size: 32px;
+	margin: 40px 0 30px;
+	padding-bottom: 12px;
+	border-bottom: 2px solid #000;
+}
+
+
 .hero {
     overflow: hidden;
     margin-bottom: 50px;
@@ -149,7 +158,10 @@
     border-radius: 4px;
     cursor: pointer;
 }
-
+.product .btnRow .shopNow a {
+    color: #fff;
+    text-decoration: none;
+}
 .product .label {
     background: #000;
     color: #fff;
@@ -164,16 +176,6 @@
 }
 
 .product .favourite {
-    width: 22px;
-    height: 22px;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    background: url(../img/heart.png) center no-repeat;
-    background-size: cover;
-}
-
-.product .favourite.top {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -182,13 +184,13 @@
     border: 0;
     background: transparent;
     cursor: pointer;
-    background: url(../img/heart.png) center no-repeat;
+    background: url(../images/heart.png) center no-repeat;
     background-size: cover;
     z-index: 2;
 }
 
 .product .favourite.active {
-    background: url(../img/heart_fill.png) center no-repeat;
+    background: url(../images/heart_fill.png) center no-repeat;
     background-size: cover;
 }
 
@@ -201,45 +203,6 @@
 .product .figGroup figure{
     width: 80px;
     margin: 10px 0 0 0;
-}
-
-.product .figGroup2 {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-}
-
-.product .figGroup2 figure{
-    width: 50px;
-    margin: 10px 0 0 0;
-}
-
-.product .notice {
-   font-size: 13px;
-   margin-top: 5px;
-}
-
-.product .notice a {
-    color: #2E74B5;
-    text-decoration: underline;
-}
-
-.product .btn {
-    display: inline-block;
-    padding: 10px 5px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    position: absolute;
-    bottom: 15px;
-    width: 168px;
-    font-size: 12px;
-}
-
-.product .btn.checkout{
-    background: #C00000;
 }
 
 .product .color{
@@ -277,6 +240,50 @@
     font-size: 9px;
     margin-left: 5px;
 }
+
+.product .figGroup2 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.product .figGroup2 figure{
+    width: 50px;
+    margin: 10px 0;
+}
+
+.product .notice {
+   font-size: 13px;
+   margin-top: 5px;
+}
+
+.product .notice a {
+    color: #2E74B5;
+    text-decoration: underline;
+}
+
+.product .btn {
+    display: inline-block;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 168px;
+    font-size: 12px;
+}
+
+.product .btn.checkout{
+    background: #C00000;
+}
+
+.product .color{
+    color: #808080;
+    font-size: 13px;
+}
 /*product end*/
 
 /*index product*/
@@ -293,11 +300,6 @@
     width: 198px;
     box-shadow: 0 0 6px rgba(0,0,0,.2);
 }
-
-.productRow .products .product .productImg{
-    width: 166px;
-}
-
 /*index product end*/
 
 /*breadcrumb*/
@@ -400,39 +402,8 @@
 }
 
 .twoCol .list .productBanner {
-    background: #000;
-    display: flex;
     margin-bottom: 50px;
-}
-
-.twoCol .list .productBanner img {
-    width: 200px;
-}
-
-.twoCol .list .productBanner .bnrText {
-    color: #fff;
-    display: flex;
-    padding: 0 30px;
-    box-sizing: border-box;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-}
-
-.twoCol .list .productBanner .bnrText .left .label1{
-    font-size: 20px;
-}
-
-.twoCol .list .productBanner .bnrText .left .label2{
-    text-align: center;
-}
-
-.twoCol .list .productBanner .bnrText .right .label3{
-    text-align: right;
-}
-
-.twoCol .list .productBanner .bnrText .right .label3 span{
-    font-size: 12px;
 }
 
 .twoCol .list .sorting {
@@ -441,12 +412,12 @@
     margin-bottom: 20px;
 }
 
-.twoCol .list .sorting .sortBy select{
+.sorting .sortBy select{
     border: 0;
     outline: 0;
 }
 
-.twoCol .list .sorting .sortBy select option{
+.sorting .sortBy select option{
     padding: 5px;
 }
 
@@ -474,10 +445,10 @@
 }
 
 .twoCol .list .btnArea{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .twoCol .list .btnArea .showMore{
@@ -572,6 +543,31 @@
 }
 /*banner end*/
 
+/*ad block*/
+.adBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.adBlock .ads{
+    margin-right: 50px;
+    width: calc((100% - 150px)/4);
+}
+
+.adBlock .ads .title{
+    margin-bottom: 10px;
+}
+.adBlock .ads figure{
+    width: 100%;
+    margin: 0;
+}
+
+.adBlock .ads:last-child {
+    margin-right: 0;
+}
+/*ad block end*/
+
 /*browse more*/
 .browseMoreBlock h3 {
     font-size: 25px;
@@ -579,7 +575,7 @@
 }
 .browseMoreBlock .browseList{
     display: flex;
-    flex-flow: wrap;
+    overflow: auto;
 }
 
 .browseMoreBlock .browseList li {
@@ -605,6 +601,92 @@
 }
 /*browse more end*/
 
+/*itemRow*/
+.itemRow {
+    display: flex;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.itemRow:last-child {
+    border-bottom: none;
+    margin: 0;
+}
+
+.itemRow .itemImg { 
+    width: 90px;
+}
+
+.itemRow .details { 
+   width: calc(100% - 230px);
+   margin: 0 20px;
+   font-size: 13px;
+}
+
+.itemRow .price { 
+    width: 100px;
+    font-size: 12px;
+    text-align: right;
+}
+
+.itemRow .code { 
+    color: #868e96;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+.itemRow .quality {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.itemRow .quality .qtySelect {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+    text-transform: none;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(204, 204, 204);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    min-width: 46px;
+    text-align: center;
+}
+
+.itemRow .quality .linkList {
+    display: flex;
+    margin-left: 20px;
+}
+
+.itemRow .quality .linkList li a span {
+    display: inline;
+    color: #000;
+}
+
+.itemRow .quality .linkList li:last-child a {
+    margin-left: 6px;
+}
+
+/*recentView */
+.recentView {
+   padding-top: 24px;
+   border-top: 1px solid #c4c4c4;
+} 
+
+.recentView .title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+
 /*categoryBlock*/
 .categoryBlock {
     display: flex;
@@ -619,6 +701,7 @@
 
 .categoryBlock .categoryList {
     display: flex;
+    flex-flow: wrap;
 }
 
 .categoryBlock .categoryList .categoryCard {
@@ -626,7 +709,7 @@
     height: 130px;
     padding: 10px;
     box-sizing: border-box;
-    margin-left: 15px;
+    margin: 0 0 15px 15px;
     border: 1px solid #7F7F7F;
     text-decoration: none;
     position: relative;
@@ -645,6 +728,180 @@
 }
 /*categoryBlock end*/
 
+/*quickViewPopup*/
+.quickViewPopup {
+    display: none;
+    border: 1px solid #000;
+}
+
+.quickViewInner {
+    padding: 30px 50px;
+    display: flex;
+}
+
+.quickViewInner .imgBlock {
+    width: 300px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.quickViewInner .imgBlock .full-size-image {
+    background-size: 100% auto;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+}
+
+.quickViewInner .imgBlock .label {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.quickViewInner .imgBlock .label .productNo{
+    font-size: 12px;
+    color: #808080;
+}
+
+.quickViewInner .imgBlock .label .productDetails{
+    color: #5B9BD5;
+    font-size: 12px;
+}
+
+.quickViewInner .detailBlock {
+    width: calc(100% - 350px);
+}
+
+.quickViewInner .detailBlock .productTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quickViewInner .detailBlock .productDesc {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.quickViewInner .detailBlock .productSize {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.quickViewInner .detailBlock .productColor {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.quickViewInner .detailBlock .colorChart {
+    height: 250px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.quickViewInner .detailBlock .colorChart .colorList {
+    display: flex;
+    flex-flow: wrap;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.quickViewInner .detailBlock .colorChart .colorList li {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.quickViewInner .detailBlock .colorChart .colorList li.disable .bSize {
+   cursor: default !important;
+   background-color: #D9D9D9;
+   color: #404040;
+}
+.quickViewInner .detailBlock .colorChart .colorList li .bSize {
+    display: inline-block;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    margin-right: 8px;
+}
+.quickViewInner .detailBlock .colorChart .colorList li:hover .bSize,
+.quickViewInner .detailBlock .colorChart .colorList li.active .bSize,
+.quickViewInner .detailBlock .colorChart .colorList li:hover img,
+.quickViewInner .detailBlock .colorChart .colorList li.active img {
+    border: 2px solid #000;
+    outline: 3px solid #fff;
+}
+.quickViewInner .detailBlock .colorChart .colorList li img {
+    width: 35px;
+    border-radius: 50%;
+    margin: 2px;
+    border: 2px solid transparent;
+    outline: 3px solid transparent;
+    outline-offset: -4px;
+    transition: all 0.5s;
+}
+.quickViewInner .detailBlock .colorChart .colorList li .new {
+    position: absolute;
+    bottom: -2px;
+    left: 5px;
+    font-size: 10px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 4px 0px;
+    border-radius: 4px;
+}
+.quickViewInner .detailBlock .colorChart .productSize2 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.quickViewInner .detailBlock .price {
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.quickViewInner .detailBlock .price em {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+}
+.quickViewInner .detailBlock .btnArea{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quickViewInner .detailBlock .btnArea .quantity{
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.quickViewInner .detailBlock .btnArea .toBasket{
+    width: 115px;
+    background: #C00000;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.quickViewInner .detailBlock .btnArea .toLove{
+    width: 115px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+/*quickViewPopup end*/
+
+/*loves no data*/
+.loves {
+    margin: 40px auto 0;
+    max-width: 980px;
+}
+.loves p {
+    margin-top: 8px;
+}
+
+/*mainTitle*/
+.mainTitle {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
 
 /* --------------------------------------
  Index
@@ -664,41 +921,44 @@
 }
 
 /* --------------------------------------
- My Basket
+basket.html & checkout.html 
 ----------------------------------------- */
-.ctBasket .mainTitle {
-    font-size: 24px;
-    margin-bottom: 24px;
-}
-
-.ctBasket .basketBlock {
+.ctBasket .basketBlock,
+.ctCheckOut .basketBlock {
     max-width: 980px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding: 30px 0 60px;
 }
 
-.basketBlock .inner {
+.ctBasket .basketBlock .inner,
+.ctCheckOut .basketBlock .inner {
     display: flex;
     justify-content: space-between;
 }
 
-.basketBlock .inner .leftArea {
+.ctBasket .basketBlock .inner .leftArea,
+.ctCheckOut .basketBlock .inner .leftArea {
+    width: 640px;
+}
+
+.basketBlock .inner .itemBlock {
     border: 1px solid #C4C4C4;
     border-radius: 6px;
-    padding: 24px;
+    padding: 24px 24px 0;
     box-sizing: border-box;
-    width: 640px;
 }
 
 .basketBlock .inner .leftArea .bskTitle {
     font-size: 16px;
     font-weight: bold;
+    margin-bottom: 16px;
 }
 
 .basketBlock .inner .rightArea {
     width: 308px;
 }
 
+.basketBlock .inner .rightArea .payment,
 .basketBlock .inner .rightArea .cashout {
     border: 1px solid #C4C4C4;
     border-radius: 6px;
@@ -731,6 +991,98 @@
 
 .basketBlock .inner .rightArea .cashout .btn {
     margin-top: 16px;
+}
+
+.basketBlock .inner .rightArea .payment {
+    margin-top: 20px;
+}
+
+.basketBlock .inner .rightArea .payment .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.basketBlock .inner .rightArea .payment .paymentList {
+    display: flex;
+}
+
+.basketBlock .inner .rightArea .payment .paymentList li img {
+    width: 34px;
+    margin-right: 10px;
+}
+
+/* -------------------------------------------
+	           checkout.html
+---------------------------------------------- */
+.ctCheckOut .checkoutBlock .row {
+    border-top: 2px solid #000;
+    padding: 20px 0;
+}
+.ctCheckOut .checkoutBlock .row dl dt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.ctCheckOut .checkoutBlock .row dl dt a {
+    font-size: 14px
+}
+.ctCheckOut .checkoutBlock .row dl dd .paymentMethod {
+    margin-bottom: 40px;
+}
+.ctCheckOut .checkoutBlock .row dl dd .paymentMethod li {
+    margin-top: 10px;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 10px;
+}
+.ctCheckOut .checkoutBlock .row dl dd .paymentMethod li .paymentIcon {
+    width: 35px;
+    margin: -3px 6px 0 0;
+}
+.ctCheckOut .checkoutBlock .row dl dd .paymentMethod + .btn {
+    width: 140px;
+    border-radius: 5px;
+}
+
+/* -------------------------------------------
+	           love.html
+---------------------------------------------- */
+.ctLove .loveBlock {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 30px 0 60px;
+}
+.ctLove .loveBlock .sorting {
+    text-align: right;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 16px;
+}
+.ctLove .itemRow .details {
+    width: calc(100% - 466px);
+}
+.ctLove .itemRow .loveBtn {
+    display: flex;
+    align-items: flex-start;
+    width: 220px;
+    margin-left: 16px;
+}
+.ctLove .itemRow .loveBtn .icon {
+    width: 23px;
+    margin: 12px 0 0 14px;
+}
+.ctLove .itemRow .loveBtn .addBtn {
+    width: 165px;
+	background-color: rgb(207, 17, 44);
+	border-radius: 30px;
+    color: #fff;
+    text-align: center;
+}
+.ctLove .itemRow .price {
+    font-size: 15px;
+    text-align: center;
 }
 
 /* -------------------------------------------
@@ -782,16 +1134,10 @@
 }
 
 /* -------------------------------------------
-	           account_information.html
+	account_information.html
 ---------------------------------------------- */
 .ctAccountInfo .ctInner {
 	margin-top: 0;
-}
-.ctAccountInfo .infoArea .leadTitle {
-	font-size: 32px;
-	margin: 40px 0 30px;
-	padding-bottom: 12px;
-	border-bottom: 2px solid #000;
 }
 .ctAccountInfo .infoArea .row {
 	width: 520px;
@@ -808,11 +1154,11 @@
 .ctAccountInfo .infoArea .row dd {
 	width: calc(100% - 180px);
 }
-.ctAccountInfo .infoArea .row .twoCol {
+.ctAccountInfo .infoArea .row .cols {
 	display: flex;
 	justify-content: space-between;
 }
-.ctAccountInfo .infoArea .row .twoCol .img {
+.ctAccountInfo .infoArea .row .cols .img {
 	width: 20px;
 }
 .ctAccountInfo .infoArea .row .editBtn {
@@ -879,4 +1225,408 @@
 }
 .ctAccountInfo .infoArea .formArea.show {
 	display: block;
+}
+
+/* -------------------------------------------
+	saved_addresses.html & payments.html
+---------------------------------------------- */
+.ctSavedAddress .ctInner,
+.ctPayment .ctInner {
+	margin-top: 0;
+}
+.ctAccountSetting {
+	position: relative;
+}
+.ctAccountSetting .row {
+	width: 730px;
+	display: flex;
+	flex-flow: wrap;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.ctAccountSetting .row dt {
+	width: 230px;
+	color: #666666;
+}
+.ctAccountSetting .row dt label {
+	position: relative;
+	top: -2px;
+	cursor: pointer;
+}
+.ctAccountSetting .row dd {
+	width: calc(100% - 230px);
+}
+.ctAccountSetting .row .cols {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.ctAccountSetting .formArea {
+	width: 730px;
+	border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px
+}
+.ctAccountSetting .formArea .field {
+	width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 25px 10px 10px;
+	margin-bottom: 20px;
+}
+.ctAccountSetting .formArea .btnList {
+	display: flex;
+	width: 730px;
+	justify-content: flex-end;
+}
+.ctAccountSetting .formArea .btnList .btn {
+	width: 120px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 8px 0;
+	color: #000;
+	transition: all 0.5s;
+	opacity: 1;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 12px;
+}
+.ctAccountSetting .formArea .btnList .update {
+	margin-left: 8px;
+	background-color: #000;
+	color: #fff;
+}
+.ctAccountSetting .formArea .btnList .btn:hover {
+	opacity: 0.6;
+}
+.ctAccountSetting .formArea,
+.ctAccountSetting .row.hide {
+	display: none;
+}
+.ctAccountSetting .formArea.show {
+	display: block;
+}
+.ctAccountSetting .formArea .title {
+	margin-bottom: 20px;
+}
+.ctAccountSetting .formArea .formList {
+	display: flex;
+	flex-flow: wrap;
+	margin-left: -20px;
+}
+.ctAccountSetting .formArea .formList li {
+	width: calc(33.33% - 20px);
+	position: relative;
+	margin-left: 20px;
+}
+.ctSavedAddress .ctAccountSetting .formArea .formList li:nth-child(1),
+.ctSavedAddress .ctAccountSetting .formArea .formList li:nth-child(2) {
+	width: calc(50% - 20px);
+}
+.ctSavedAddress .ctAccountSetting .formArea .formList li:nth-child(3),
+.ctSavedAddress .ctAccountSetting .formArea .formList li:nth-child(4) {
+	width: 100%;
+}
+.ctPayment .ctAccountSetting .formArea .formList li:nth-child(1),
+.ctPayment .ctAccountSetting .formArea .formList li:nth-child(2),
+.ctPayment .ctAccountSetting .formArea .formList li:nth-child(3),
+.ctPayment .ctAccountSetting .formArea .formList li:nth-child(7) {
+	width: 100%;
+}
+.ctAccountSetting .formArea .formList li label {
+	position: absolute;
+	top: 14px;
+    left: 11px;
+	transition: all 0.5s;
+	font-size: 10px;
+	color: #666666;
+}
+.ctAccountSetting .formArea .formList li input:focus ~ label,
+.ctAccountSetting .formArea .formList li label.move {	
+	top: 5px;
+}
+.ctAccountSetting .formArea .cols {	
+	font-size: 11px;
+	display: flex;
+	justify-content: space-between;
+	margin: -10px 0 15px;
+}
+.ctAccountSetting .formArea .cols .removeBtn {	
+	font-size: 11px;
+}
+.ctAccountSetting .formArea .cols .checkBox label {	
+	position: relative;
+	top: -2px;
+	cursor: pointer;
+}
+.ctAccountSetting .editBtn,
+.ctAccountSetting .removeBtn {
+	color: #136bea;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.5s;
+	padding-left: 30px;
+}
+.ctAccountSetting .editBtn:hover,
+.ctAccountSetting .removeBtn:hover {
+	text-decoration: underline;
+}
+.ctAccountSetting [type=checkbox] {
+	accent-color: #000;
+}
+.ctAccountSetting .addBtn {
+	position: absolute;
+	top: 13px;
+	right: 0;
+	background: none;
+	border: none;
+	font-size: 15px;
+	cursor: pointer;
+}
+.ctAccountSetting .addBtn:hover {
+	text-decoration: underline;
+}
+
+/* -------------------------------------------
+	recent_orders.html & orders_history.html
+---------------------------------------------- */
+.ctRecentOrder .ctInner,
+.ctOrderHistory .ctInner {
+	margin-top: 0;
+}
+.orderList .noData {
+	margin-top: 20px;
+}
+
+/* -------------------------------------------
+	details_1.html & details_2.html
+---------------------------------------------- */
+
+/* details common */
+.tab-list li {
+    display: inline-block;
+}
+.tab-list li a {
+    color: #000;
+    display: block;
+    padding: 8px;
+    border: 1px solid #C4C4C4;
+    border-bottom: none;
+}
+.tab-list li.active a, 
+.tab-list li a:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+.tab-panel {
+    display: none;
+    color: #000;
+    border-top: 1px solid #c4c4c4;
+}
+.tab-panel.active {
+    display: block;
+}
+.tab-panel {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.tab-panel .textLists li {
+    margin-bottom: 16px;
+}
+.useWith {
+    padding-top: 24px;
+    border-top: 1px solid #c4c4c4;
+    margin-bottom: 30px;
+}
+.useWith .title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+.useWith .usewithLists {
+    display: flex;
+    justify-content: space-between;
+}
+.useWith .usewithLists .product {
+    width: 400px;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    display: flex;
+}
+.useWith .usewithLists .product .img {
+    width: 80px;
+    margin-right: 20px;
+}
+.useWith .usewithLists .product .txtCol {
+    width: calc(100% - 100px);
+    font-size: 12px;
+}
+.useWith .usewithLists .product .txtCol .brand {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.useWith .usewithLists .product .txtCol .category span {
+    display: block;
+    color: #808080;
+}
+.useWith .usewithLists .product .txtCol .price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.useWith .usewithLists .product .detailBtn {
+    display: inline-block;
+    color:#000;
+    font-size: 12px;
+    padding: 4px 6px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.ctDetail .detailInner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 0 60px;
+}
+
+.ctDetail .quickViewInner {
+    padding: 10px 0 50px;
+}
+.ctDetail .quickViewInner .imgBlock {
+    width: 500px;
+    position: relative;
+}
+.ctDetail .quickViewInner .detailBlock {
+    width: calc(100% - 550px);
+}
+.ctDetail .quickViewInner .detailBlock .colorChart {
+    height: auto;
+}
+/* .ctDetail .quickViewInner .detailBlock .colorChart .colorList li .new {
+    left: 7px;
+} */
+.ctDetail .quickViewInner .imgBlock .full-size-image {
+    background-size: 100% auto;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.ctDetail .quickViewInner .detailBlock .btnArea .quantity {
+    background-color: #C00000;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid #fff;
+    outline: 0;
+    padding: 0 6px;
+}
+.ctDetail .quickViewInner .detailBlock .btnArea .toBasket {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.ctDetail .slider {
+    margin-left: 80px;
+}
+.ctDetail .slider .slick-prev, 
+.ctDetail .slider .slick-next {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: 9;
+}
+.ctDetail .slider .slick-prev {
+    left: 50px;
+    background: url(../images/left_arr.png) no-repeat;
+    background-size: 30px auto;
+}
+.ctDetail .slider .slick-next {
+    right: 50px;
+    background: url(../images/right_arr.png) no-repeat;
+    background-size: 30px auto;
+}
+.ctDetail .slick-slide > A {
+    display: block;
+    position: relative;
+}
+.ctDetail .slick-slide > A > IMG {
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ctDetail .slick-dots {
+    bottom: -37.5px;
+    position: absolute;
+    top: 0;
+    left: -80px;
+}
+  
+.ctDetail .slick-dots LI {
+    width: 60px;
+    height: 60px;
+    opacity: .8;
+}
+  
+.ctDetail .slick-dots LI.slick-active {
+    opacity: 1;
+}
+  
+.ctDetail .slick-dots LI.slick-active BUTTON,
+.ctDetail .slick-dots LI:hover BUTTON {
+    opacity: 1;
+    transform: scale(1,1);
+}
+  
+.ctDetail .slick-dots LI BUTTON {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    transition: all .5s ease;
+    transform: scale(.75,.75);
+}
+  
+.ctDetail .slick-dots LI BUTTON IMG {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ctDetail .slick-dots LI BUTTON:before {
+    display: block;
+    position: relative;
+    content: '';
+    width: 100%;
+    padding-top: 100%;
+    height: auto;
 }
